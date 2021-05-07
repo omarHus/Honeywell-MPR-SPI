@@ -2,7 +2,7 @@
 
 This `arduino` library allows you to hook up multiple [Honeywell micropressure sensors](https://sensing.honeywell.com/honeywell-sensing-micropressure-board-mount-pressure-mpr-series-datasheet-32332628-en.pdf) to the same serial bus using SPI.
 
-![Honeywell Micropressure Sensors](https://github.com/omarHus/Honeywell-MPR-SPI/images/Honeywell_MicroPressure_Evaluation_Board.png "Honeywell MPR Series Sensors")
+![Honeywell Micropressure Sensors](https://github.com/omarHus/Honeywell-MPR-SPI/raw/master/images/Honeywell_MicroPressure_Evaluation_Board.png "Honeywell MPR Series Sensors")
 
 ## Usage
 
