@@ -1,14 +1,15 @@
 # Honeywell Micropressure Sensors (MPR Series) With SPI
 
-This 'arduino' library allows you to hook up multiple Honeywell micropressure sensors to the same serial bus using SPI.
+This `arduino` library allows you to hook up multiple [Honeywell micropressure sensors](https://sensing.honeywell.com/honeywell-sensing-micropressure-board-mount-pressure-mpr-series-datasheet-32332628-en.pdf) to the same serial bus using SPI.
+
+![Honeywell Micropressure Sensors](https://github.com/omarHus/Honeywell-MPR-SPI/images/Honeywell_MicroPressure_Evaluation_Board.png "Honeywell MPR Series Sensors")
 
 ## Usage
-___
 
 These sensors are rated for 3.3 V so if you are using an arduino uno you will have to be sure to convert the signal from 5V to 3.3V.
 I have used this library on a teensy 4.0 which is a 3.3V microcontroller and it works great.
 
-'''
+```
 // Start SPI
 SPI.begin();
 
@@ -17,8 +18,7 @@ sensor1 = new mpr(sensorPin1);
 
 // Get pressure reading
 double pressure1 = sensor1.getPressure();
-
-'''
+```
 
 It's as simple as that folks.
 
