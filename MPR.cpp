@@ -25,11 +25,10 @@ MPR::MPR(int pin)
 {
     pinMode(pin, OUTPUT);    // Set chip select pin as an output
     digitalWrite(pin, HIGH); // Deselect pin
-    
     _pin = pin;
-    
 }
 
+/* Begin connection to sensors to make sure they are connected properly */
 boolean MPR::begin()
 {
     // Get status byte from sensor

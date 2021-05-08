@@ -5,11 +5,18 @@ This `arduino` library allows you to hook up multiple [Honeywell micropressure s
 
 ![Honeywell Micropressure Sensors](images/Honeywell_MicroPressure_Evaluation_Board.png?raw=true "Honeywell MPR Series Sensors")
 
-## Usage
+## Motivation
 Most libraries give you the I2C protocol for hooking up these sensors, but this only allows you to have one sensor per bus, which is very limiting. Using SPI and this library, you can hook up multiple sensors, which allows you to measure pressure in multiple locations, and even convert your system into a flow meter.
+
+## Requirements
+
+To get started, download this zip and place the folder in `Documents/Arduino/Libraries`. Check out the example in [example/example.ino](example/example.ino).
 
 These sensors are rated for 3.3 V so if you are using an arduino uno you will have to be sure to convert the signal from 5V to 3.3V.
 I have used this library on a teensy 4.0 which is a 3.3V microcontroller and it works great.
+
+
+## Usage
 
 ```
 // Start SPI
